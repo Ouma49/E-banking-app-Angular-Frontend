@@ -3,20 +3,36 @@
     <ng-container *ngIf="customers | async as listCustomers; else failureOrLoading">
 
         <div class="card">
-    
             <div class="card-header">Customers</div>
             <div class="card-body">
-                <table>
+                <div *ngIf="searchFormGroup">
+                    <form [formGroup]="searchFormGroup" (ngSubmit)="handleSearchCustomers()">
+                        <div class="input-group">
+                            <label class="input-group-text">keyword :</label>
+                            <input type="text" formControlName="keyword" class="form-control">
+                            <button class="btn btn-info">
+                                <i class="bi bi-search"></i>
+                             </button>                        </div>
+                    </form>
+                </div>
+
+              
+                <table class="table">
                     <thead>
                         <tr>
-                            <th>ID</th> <th>Name</th> <th>Email</th>
+                            <th>ID</th> <th>Name</th> <th>Email</th> <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                         <tr *ngFor="let c of customers | async"> 
+                         <tr *ngFor="let c of listCustomers"> 
                             <td>{{c.id}}</td>
                             <td>{{c.name}}</td>
                             <td>{{c.email}}</td>
+                            <td>
+                                <button (click)="handleDeleteCustomer(c)" class="btn btn-danger">
+                                <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
                          </tr>
                     </tbody>
                 </table>
