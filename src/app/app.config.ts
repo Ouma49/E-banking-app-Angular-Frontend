@@ -1,7 +1,8 @@
 import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'; 
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { appHttpInterceptor } from './interceptors/app-http.interceptor';
 
 import { routes } from './app.routes';
 
@@ -10,6 +11,8 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
-    importProvidersFrom(HttpClientModule) // ✅ Ajouté ici
+    provideHttpClient(
+      withInterceptors([appHttpInterceptor])
+    )
   ]
 };
