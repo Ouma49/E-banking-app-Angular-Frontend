@@ -134,10 +134,10 @@ E-banking-app-Angular-Frontend/
 ## 📸 Aperçu Visuel
 
 ### Interface d'Authentification
-![Interface d'Authentification](.angular/cache/19.2.12/digital-banking-web/vite/assets/auth.png)
+![Interface d'Authentification](.angular/cache/19.2.12/digital-banking-web/assets/auth.png)
 
 ### Barre de Navigation avec Recherche
-![Barre de Navigation](.angular/cache/19.2.12/digital-banking-web/vite/assets/navbar_search.png)
+![Barre de Navigation](.angular/cache/19.2.12/digital-banking-web/assets/navbar_search.png)
 
 ## 👨‍💻 Auteur
 
