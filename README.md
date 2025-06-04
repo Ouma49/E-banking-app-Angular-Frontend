@@ -136,8 +136,8 @@ E-banking-app-Angular-Frontend/
 ### Interface de Connexion
 ![Interface de Connexion](.angular/assets/login.png)
 
-### Barre de Navigation
-![Barre de Navigation](.angular/assets/navbar.png)
+### Opérations sur Compte
+![Opérations sur Compte](.angular/assets/accountoperations.png)
 
 ### Formulaire Nouveau Client
 ![Nouveau Client](.angular/assets/newcustomer.png)
