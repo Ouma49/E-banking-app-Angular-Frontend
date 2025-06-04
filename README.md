@@ -133,11 +133,20 @@ E-banking-app-Angular-Frontend/
 
 ## 📸 Aperçu Visuel
 
-### Interface d'Authentification
-![Interface d'Authentification](.angular/assets/auth.png)
+### Interface de Connexion
+![Interface de Connexion](.angular/assets/login.png)
 
-### Barre de Navigation avec Recherche
-![Barre de Navigation](.angular/assets/navbar_search.png)
+### Barre de Navigation
+![Barre de Navigation](.angular/assets/navbar.png)
+
+### Formulaire Nouveau Client
+![Nouveau Client](.angular/assets/newcustomer.png)
+
+### Recherche de Clients (Vue 1)
+![Recherche Clients 1](.angular/assets/search1.png)
+
+### Recherche de Clients (Vue 2)
+![Recherche Clients 2](.angular/assets/search2.png)
 
 ## 👨‍💻 Auteur
 
